@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: consolas, sans-serif;
+        }
+
+        .bg {
+            margin-bottom: 20px;
+            background-color: #2d2d30;
+            color: white;
+            padding: 5px 15px;
+            width: 15%;
+            border-radius: 5%;
+        }
+
+        .sub {
+            background-color: #2d2d30;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5%;
+        }
+
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <p>Esercizio 1 - Visualizzare i dati su una mappa di Milano. Fare in modo che i punti siano colorati in rosso </p>
+        <form method="get" action="/res/1/">
+            <input class="sub" type="submit">
+        </form>
+    </div>
+    <div class="bg">
+        <p>Esercizio 2 - Visualizzare sulla mappa anche i confini dei quartieri di Milano. Colorare i confini di nero </p>
+        <form method="get" action="/res/2/">
+            <input class="sub" type="submit">
+        </form>
+    </div>
+    <div class="bg">
+        <p>Esercizio 3 - Permettere all'utente di inserire la localizzazione di un parcheggio e di avere il nome del quartiere che ha al suo interno quel parcheggio. Visualizzare poi la mappa del quartiere con un marker nella posizione del parcheggio. Dare un opportuno messaggio di errore se il parcheggio non esiste. </p>
+        <form method="get" action="/res/3/">
+            <label for="">Localizzazione di un parcheggio</label>
+            <br>
+            <input type="text" name="location" placeholder="ex. TRENNO">
+            <br><br>
+            <input class="sub" type="submit">
+        </form>
+    </div>
+    <div class="bg">
+        <p>Esercizio 4 - Permettere all'utente di inserire la propria posizione ed una distanza e di avere la lista dei parcheggi che si trovano a meno di quella distanza dalla posizione dell'utente. Visualizzare poi la mappa di Milano con i parcheggi trovati e i confini dei quartieri in cui si trovano. Se non ci sono parcheggi, segnalarlo con un messaggio opportuno. </p>
+        <form method="get" action="/res/4/">
+            <br>
+            <input type="text" name="lat" placeholder="Latidudine">
+            <br>
+            <input type="text" name="long" placeholder="Longitudine">
+            <br>
+            <input type="text" name="dist" placeholder="Distanza Massima">
+            <br><br>
+            <input class="sub" type="submit">
+        </form>
+    </div>
+    <div class="bg">
+        <p>Esercizio 5 - Visualizzare i nomi dei quartieri che non hanno parcheggi al loro interno. Visualizzarli su una mappa con i confini colorati di grigio. </p>
+        <form method="get" action="/res/5/">
+            <input class="sub" type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
